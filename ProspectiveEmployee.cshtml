@@ -1,0 +1,336 @@
+﻿
+@{
+    ViewBag.Title = "Prospective Employees";
+}
+
+<style>
+    #content_area {
+        clear: both;
+        margin-left: 5px;
+    }
+
+    #container {
+        background-color: #EDF2F4;
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12;
+        font-family: Verdana, Geneva, sans-serif;
+        color: #333;
+        overflow: auto;
+    }
+
+    #header {
+        background-color: #036;
+        height: 220px;
+        color: #EDF2F4;
+    }
+
+    #body {
+        background-image: url(../images/navyback.jpg);
+    }
+
+    #nav {
+        background-color: #05527F;
+        height: 35px;
+    }
+
+        #nav a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 10px;
+        }
+
+        #nav li {
+            display: inline;
+            padding-right: 20px;
+        }
+
+        #nav a:hover {
+            color: #036;
+        }
+
+    #table {
+        width: 100%;
+        float: left;
+    }
+
+    th1 {
+        background-color: #FFF;
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    td1 {
+        background-color: #FFF;
+        font-size: 10pt;
+        text-align: left;
+    }
+
+    #colOne {
+        width: 250px;
+        float: left;
+        padding: 10px;
+        padding-top: 0px;
+    }
+
+    #colTwo {
+        width: 625px;
+        float: right;
+        text-align:left;
+        padding-left:150px;
+    }
+
+    #contentLeft {
+        width: 350px;
+        float: left;
+    }
+
+    #contentRight {
+        width: 210px;
+        float: left;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    #content_area ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .txtNew_override-left * {
+        text-align: left !important;
+    }
+
+    .txtNew_override-right * {
+        text-align: right !important;
+    }
+
+    .txtNew_override-center * {
+        text-align: center !important;
+    }
+
+    .txtNew_override-justify * {
+        text-align: justify !important;
+    }
+
+    .txtNew > * {
+        pointer-events: auto;
+    }
+
+    .txtNew li {
+        font-style: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: normal;
+    }
+
+    .txtNew ol, .txtNew ul {
+        padding-left: 1.3em;
+        padding-right: 0;
+        margin-left: 0.5em;
+        margin-right: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew ul {
+        list-style-type: disc;
+    }
+
+    .txtNew ol {
+        list-style-type: decimal;
+    }
+
+        .txtNew ul ul, .txtNew ol ul {
+            list-style-type: circle;
+        }
+
+            .txtNew ul ul ul, .txtNew ol ul ul {
+                list-style-type: square;
+            }
+
+        .txtNew ul ol ul, .txtNew ol ol ul {
+            list-style-type: square;
+        }
+
+        .txtNew ul[dir="rtl"], .txtNew ol[dir="rtl"] {
+            padding-left: 0;
+            padding-right: 1.3em;
+            margin-left: 0;
+            margin-right: 0.5em;
+        }
+
+        .txtNew ul[dir="rtl"] ul, .txtNew ul[dir="rtl"] ol, .txtNew ol[dir="rtl"] ul, .txtNew ol[dir="rtl"] ol {
+            padding-left: 0;
+            padding-right: 1.3em;
+            margin-left: 0;
+            margin-right: 0.5em;
+        }
+
+    .txtNew p {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew h1 {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew h2 {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew h3 {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+        left: 30px;
+        word-wrap: break-word;
+    }
+
+    .txtNew h4 {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew h5 {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew h6 {
+        margin: 0;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+
+    .txtNew a {
+        color: inherit;
+    }
+
+    #comp-jyyn24ld {
+        position: relative;
+        margin: 0px 0px 8px 0px;
+        left: 30px;
+        justify-self: start;
+        align-self: start;
+    }
+
+    #comp-jyyn3a46 {
+        position: relative;
+        margin: 0px 0px 0px 0;
+        left: 40px;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .font_2 {
+        font: normal normal normal 28px/1.375em didot-w01-italic,serif;
+    }
+
+    .font_8 {
+        font: normal normal normal 15px/1.75em futura-lt-w01-light,sans-serif;
+    }
+</style>
+<aside id="colOne">
+    <!--Begin colOne-->
+    <h3 class="txtNew" id="comp-jyyn24ld" style="font: normal normal normal 28px/1.375em didot-w01-italic,serif; font-family: palatino linotype,serif; font-size:20px; color:#292929; text-align:start; pointer-events:auto; letter-spacing: normal; line-height: normal; vertical-align: baseline; margin-left:0px; padding:0; border:0; outline:0;">Positions available</h3>
+    <div id="table">
+        <table style="width:302px" ; class="txtNew" id="comp-jyyn3a46">
+            <tr>
+                <td1><p class="font_8" style="width:302px;height:auto;pointer-events:none" id="comp-jyyn3a46">*Certified Traffic Control Supervisor</td1>
+            </tr>
+            <tr>
+                <td1><p class="font_8" style="width:302px;height:auto;pointer-events:none" id="comp-jyyn3a46">*Flagger</td1>
+            </tr>
+            <tr>
+                <td1><p class="font_8" style="width:302px;height:auto;pointer-events:none" id="comp-jyyn3a46">*Office Assistant</td1>
+            </tr>
+            <tr>
+                <td1><p class="font_8" style="width:302px;height:auto;pointer-events:none" id="comp-jyyn3a46">*Safety Management Coordinator</td1>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <h3 class="txtNew" id="comp-jyyn24ld" style="font: normal normal normal 28px/1.375em didot-w01-italic,serif; font-family: palatino linotype,serif; font-size:20px; color:#292929; width: 302px; text-align:start; pointer-events:auto; letter-spacing: normal; margin-top:120px; margin-bottom:10px; vertical-align: baseline; padding:0; border:0; outline:0;">Testimonies from our employees</h3>
+    <img style="object-position: 50% 50%; margin-left: 30px; width: 379px; height: 71px; object-fit: cover;" alt="Testimony1.png" data-type="image" itemprop="image" src="~/images/Testimony1.png">
+    <img style="object-position: 50% 50%; margin-left: 30px; width: 379px; height: 71px; object-fit: cover;" alt="Testimony1.png" data-type="image" itemprop="image" src="~/images/Testimony2.png">
+    <a href="https://www.atssa.com/Training/Find-a-Course"><img style="object-position: 50% 50%; margin-left: 30px; width: 264px; height: 185px; margin-top: 40px; object-fit: cover;" alt="Testimony1.png" data-type="image" itemprop="image" src="~/images/ATSSA logo.jpg"></a>
+    <h3 class="txtNew" id="comp-jyyn24ld" style="font: normal normal normal 18px/1.75em futura-lt-w01-light,sans-serif; font-family: avenir-lt-w01_35-light1475496,sans-serif; font-size:15px; color:#292929; width: 302px; text-align:start; pointer-events:auto; letter-spacing: normal; vertical-align: baseline; padding:0; border:0; outline:0;">ATSSA Training and Certification Courses</h3>
+</aside>
+<section id="colTwo">
+    <!--Begin colTwo-->
+    <div id="content_area">
+        <fieldset>
+        <legend>
+        <h3 class="txtNew" id="comp-jyyn24ld" style="font: normal normal normal 28px/1.375em didot-w01-italic,serif; font-family: palatino linotype,serif; font-size:20px; color:#292929; text-align:start; left:0px; pointer-events:auto; letter-spacing: normal; line-height: normal; vertical-align: baseline; margin-left:0px; padding:0; border:0; outline:0;">Join our team</h3>
+        </legend>
+        <form name="contact" action="itemform.php" method="post" enctype="multipart/form-data" id="contact"</p>
+	    <p>
+				Salutation:
+				<input type="radio" name="Salutation" id="favRev." value="Rev."/>Rev.
+				<input type="radio" name="Salutation" id="favDr." value="Dr."/>Dr.
+				<input type="radio" name="Salutation" id="favMr."  value="Mr." checked />Mr.
+				<input type="radio" name="Salutation" id="favMrs." value="Mrs."/>Mrs.
+				<input type="radio" name="Salutation" id="favMs." value="Ms."/>Ms.
+				<input type="radio" name="Salutation" id="favMiss" value="Miss"/>Miss
+				<p>First name: <input type="text" name="FirstName" id="FirstName" value=""/></p>
+				<p>Last name: <input type="text" name="LastName" id="LastName" value="" /></p>
+				Suffix:
+				<input type="radio" name="Suffix" id="favJr." value="Jr."/>Jr.
+				<input type="radio" name="Suffix" id="favSr." value="Sr."/>Sr.
+				<input type="radio" name="Suffix" id="favIII." value="III"/>III
+				<input type="radio" name="Suffix" id="favIV." value="IV"/>IV
+				<input type="radio" name="Suffix" id="favJD." value="J.D."/>J.D.
+				<input type="radio" name="Suffix" id="favMBA." value="M.B.A."/>M.B.A.
+				<input type="radio" name="Suffix" id="favMD" value="M.D."/>M.D.
+				<input type="radio" name="Suffix" id="favPHD" value="Ph.D."/>Ph.D.
+				<input type="radio" name="Suffix" id="favPHD" value="None" checked />None
+				<p>Address: <input type="text" name="Mail" id="Mail" value=""/></p>
+                <p>City: <input type="text" name="Mail" id="Mail" value=""/></p>
+                <p>State: <input type="text" name="Mail" id="Mail" value=""/></p>
+                <p>Zip code: <input type="text" name="Mail" id="Mail" value=""/></p>
+				<p>Daytime phone number: <input type="text" name="Phone" id="Phone" size="15" value=""/></p>
+				<p>Email: <input type="text" name="Email" id="Email" value=""/></p>
+				<p>Preferred Contact:
+				<select name="Contact" id="Please Select">
+						<option value="Mail">Mail</option>
+						<option selected value="Phone">Phone</option>
+						<option value="Email">Email</option>
+				</select>
+				<p>Position of interest:
+                    <select name="Contact" id="Please Select">
+                        <option value="Mail">Certified Traffic Control Supervisor</option>
+                        <option selected value="Phone">Flagger</option>
+                        <option value="Email">Office Assistant</option>
+                        <option value="Email">Safety Management Coordinator</option>
+                    </select>
+                <p>Available start date: <input type="date" name="Start Date"></p>
+                <div>
+                    <label for="file">Attach a resume</label>
+                    <input type="file" id="file" name="file" multiple>
+                </div>
+                <p>LinkedIn address: <input type="text" name="LinkedIn" value="" /></p>
+				<div style="text-align:center">
+				<input type="reset" value="Clear Form" />
+				&nbsp;&nbsp;
+				<input type="submit" name="Submit" value="Send Form" />
+				</div>
+        </form>
+        </fieldset>
+    </div>
+</section> <!--End colTwo-->
