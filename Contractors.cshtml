@@ -12,17 +12,17 @@
 </p>
 
 <div id="content">
-    <aside id="colOne">
-        <img src="../images/Iowa-DOT.jpg" alt="Iowa DOT Icon" />
-        <h2>Iowa Department of Transportation Vendor File</h2>
+    <aside id="">
+        <img src="../images/Iowa-DOT.jpg" alt="Iowa DOT Icon" style="width:300px; height:auto;" />/>
+        <p>Iowa Department of Transportation Vendor File</p>
 
-        <img src="../images/Iowa-SOS.png" alt="Iowa SOS Icon" />
-        <h2>Iowa Secretary of State Business Entity Summary</h2>
+        <img src="../images/Iowa-SOS.png" alt="Iowa SOS Icon" style="width:300px; height:auto;" />
+        <p>Iowa Secretary of State Business Entity Summary</p>
 
-        <img src="../images/Iowa-TSB.png" alt="Iowa Icon" />
-        <h2>Iowa Targeted Small Business Registry</h2>
+        <img src="../images/Iowa-TSB.png" alt="Iowa Icon" style="width:300px; height:auto;" />
+        <p>Iowa Targeted Small Business Registry</p>
     </aside>
-    <article id="colTwo">
+    <article id="">
         <h1>Request services/people</h1>
         <div id="colleft">
             <form id="contactform" action="#" method="post">
@@ -36,13 +36,23 @@
                     <p><label for="email">Email Address:</label><input type="email" name="email" placeholder="Your Email Address" /></p>
                     <p><label for="phone">Phone Number:</label><input type="text" name="phone" placeholder="(555) 555-5555" /></p>
                     <p>
+                        <label for="total people">Total number of people</label>
+                        <input type="number" min="1" max="30" />
+
+                    </p>
+
+                    <p>
+                        <input type="date" name="date" min="1" />
+                    </p>
+
+                    <!--<p>
                         <label for="preffered contact">Preferred Contact:</label>
                         <select name="Preferred Contact">
                             <option value="please select">Please Select</option>
                             <option value="Phone">Phone</option>
                             <option value="Email">Email</option>
                         </select>
-                    </p>
+                    </p>-->
                     <p><label for="message">Message: </label> <textarea name="message" placeholder="Enter Your Message"></textarea></p>
                     <p><button>Send</button></p>
                 </fieldset>
