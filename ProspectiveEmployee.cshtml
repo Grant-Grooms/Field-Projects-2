@@ -1,4 +1,4 @@
-﻿
+
 @{
     ViewBag.Title = "Prospective Employees";
 }
@@ -276,60 +276,113 @@
     <!--Begin colTwo-->
     <div id="content_area">
         <fieldset>
-        <legend>
-        <h3 class="txtNew" id="comp-jyyn24ld" style="font: normal normal normal 28px/1.375em didot-w01-italic,serif; font-family: palatino linotype,serif; font-size:20px; color:#292929; text-align:start; left:0px; pointer-events:auto; letter-spacing: normal; line-height: normal; vertical-align: baseline; margin-left:0px; padding:0; border:0; outline:0;">Join our team</h3>
-        </legend>
-        <form name="contact" action="itemform.php" method="post" enctype="multipart/form-data" id="contact"</p>
-	    <p>
-				Salutation:
-				<input type="radio" name="Salutation" id="favRev." value="Rev."/>Rev.
-				<input type="radio" name="Salutation" id="favDr." value="Dr."/>Dr.
-				<input type="radio" name="Salutation" id="favMr."  value="Mr." checked />Mr.
-				<input type="radio" name="Salutation" id="favMrs." value="Mrs."/>Mrs.
-				<input type="radio" name="Salutation" id="favMs." value="Ms."/>Ms.
-				<input type="radio" name="Salutation" id="favMiss" value="Miss"/>Miss
-				<p>First name: <input type="text" name="FirstName" id="FirstName" value=""/></p>
-				<p>Last name: <input type="text" name="LastName" id="LastName" value="" /></p>
-				Suffix:
-				<input type="radio" name="Suffix" id="favJr." value="Jr."/>Jr.
-				<input type="radio" name="Suffix" id="favSr." value="Sr."/>Sr.
-				<input type="radio" name="Suffix" id="favIII." value="III"/>III
-				<input type="radio" name="Suffix" id="favIV." value="IV"/>IV
-				<input type="radio" name="Suffix" id="favJD." value="J.D."/>J.D.
-				<input type="radio" name="Suffix" id="favMBA." value="M.B.A."/>M.B.A.
-				<input type="radio" name="Suffix" id="favMD" value="M.D."/>M.D.
-				<input type="radio" name="Suffix" id="favPHD" value="Ph.D."/>Ph.D.
-				<input type="radio" name="Suffix" id="favPHD" value="None" checked />None
-				<p>Address: <input type="text" name="Mail" id="Mail" value=""/></p>
-                <p>City: <input type="text" name="Mail" id="Mail" value=""/></p>
-                <p>State: <input type="text" name="Mail" id="Mail" value=""/></p>
-                <p>Zip code: <input type="text" name="Mail" id="Mail" value=""/></p>
-				<p>Daytime phone number: <input type="text" name="Phone" id="Phone" size="15" value=""/></p>
-				<p>Email: <input type="text" name="Email" id="Email" value=""/></p>
-				<p>Preferred Contact:
-				<select name="Contact" id="Please Select">
-						<option value="Mail">Mail</option>
-						<option selected value="Phone">Phone</option>
-						<option value="Email">Email</option>
-				</select>
-				<p>Position of interest:
-                    <select name="Contact" id="Please Select">
-                        <option value="Mail">Certified Traffic Control Supervisor</option>
-                        <option selected value="Phone">Flagger</option>
-                        <option value="Email">Office Assistant</option>
-                        <option value="Email">Safety Management Coordinator</option>
-                    </select>
-                <p>Available start date: <input type="date" name="Start Date"></p>
-                <div>
-                    <label for="file">Attach a resume</label>
-                    <input type="file" id="file" name="file" multiple>
-                </div>
-                <p>LinkedIn address: <input type="text" name="LinkedIn" value="" /></p>
-				<div style="text-align:center">
-				<input type="reset" value="Clear Form" />
-				&nbsp;&nbsp;
-				<input type="submit" name="Submit" value="Send Form" />
-				</div>
+            <legend>
+                <h3 class="txtNew" id="comp-jyyn24ld" style="font: normal normal normal 28px/1.375em didot-w01-italic,serif; font-family: palatino linotype,serif; font-size:20px; color:#292929; text-align:start; left:0px; pointer-events:auto; letter-spacing: normal; line-height: normal; vertical-align: baseline; margin-left:0px; padding:0; border:0; outline:0;">Join our team</h3>
+            </legend>
+            <form name="contact" action="mailto:Robert.Heisdorffer@gmail.com" method="post" enctype="multipart/form-data" id="contact">
+                <p>
+                    <table border="0">
+                        <tr>
+                            <td>
+                                Salutation:
+                                <input type="radio" name="Salutation" id="favRev." value="Rev." />Rev.
+                                <input type="radio" name="Salutation" id="favDr." value="Dr." />Dr.
+                                <input type="radio" name="Salutation" id="favMr." value="Mr." checked />Mr.
+                                <input type="radio" name="Salutation" id="favMrs." value="Mrs." />Mrs.
+                                <input type="radio" name="Salutation" id="favMs." value="Ms." />Ms.
+                                <input type="radio" name="Salutation" id="favMiss" value="Miss" />Miss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>First name</td>
+                            <td><input type="text" name="FirstName" id="FirstName" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Last name</td>
+                            <td><input type="text" name="LastName" id="LastName" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Suffix</td>
+                            <td>
+                                <input type="radio" name="Suffix" id="favJr." value="Jr." />Jr.
+                                <input type="radio" name="Suffix" id="favSr." value="Sr." />Sr.
+                                <input type="radio" name="Suffix" id="favIII." value="III" />III
+                                <input type="radio" name="Suffix" id="favIV." value="IV" />IV
+                                <input type="radio" name="Suffix" id="favJD." value="J.D." />J.D.
+                                <input type="radio" name="Suffix" id="favMBA." value="M.B.A." />M.B.A.
+                                <input type="radio" name="Suffix" id="favMD" value="M.D." />M.D.
+                                <input type="radio" name="Suffix" id="favPHD" value="Ph.D." />Ph.D.
+                                <input type="radio" name="Suffix" id="favPHD" value="None" checked />None
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><input type="text" name="Address" id="Address" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" name="City" id="City" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td><input type="text" name="State" id="State" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Zip code</td>
+                            <td><input type="text" name="Zip" id="Zip" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Phone number:</td>
+                            <td><input type="text" name="Phone" id="Phone" size="15" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="text" name="Email" id="Email" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td>Preferred contact:</td>
+                            <td>
+                                <select name="Contact" id="Please Select">
+                                    <option value="Mail">Mail</option>
+                                    <option selected value="Phone">Phone</option>
+                                    <option value="Email">Email</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Position of interest:</td>
+                            <td>
+                                <select name="Contact" id="Please Select">
+                                    <option value="Mail">Certified Traffic Control Supervisor</option>
+                                    <option selected value="Phone">Flagger</option>
+                                    <option value="Email">Office Assistant</option>
+                                    <option value="Email">Safety Management Coordinator</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Available start date:</td>
+                            <td><input type="date" name="Start Date" value=""></td>
+                        </tr>
+                        <tr>
+                            <div>
+                                <td><label for="file">Attach a resume:</label></td>
+                                <td><input type="file" id="file" name="file" multiple></td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>LinkedIn address:</td>
+                            <td><input type="text" name="LinkedIn" value="" /></td>
+                        </tr>
+                        <tr>
+                            <td><div style="text-align:center">
+                                <input type="reset" value="Clear Form" />
+                                &nbsp;&nbsp;
+                                <input type="submit" name="Submit" value="Send Form" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
         </form>
         </fieldset>
     </div>
