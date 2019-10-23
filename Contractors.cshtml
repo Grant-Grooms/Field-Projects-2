@@ -3,61 +3,127 @@
     ViewBag.Title = "Contractors";
 }
 
-<p>
-    At Flaggers National your work zone safety is our business. We specialize in providing efficient and effective solutions to your roadway projects.
+@{ 
+     string thisMonth = DateTime.Now.Month.ToString();
+     string thisYear = DateTime.Now.Year.ToString();
+    // string thisDay = DateTime.Now.Day.ToString();
 
-    We provide accurate and professional traffic control consultation and planning services for bridge and heavy highway maintenance, new construction, railroad crossings, survey crews, utility operations, concrete and paving projects, clearing / grubbing, excavation, and more.
+    int today = DateTime.Now.Day;
+    today += 4;
+    string thisDay = Convert.ToString(today);
+}
 
-    ​		We mobilize, manage, and monitor traffic control projects. We deliver and set up all traffic control devices and break them down thereafter. We develop traffic control plans, interact with local county engineers, and prepare traffic control diaries. We monitor the efficiency of the traffic control throughout each hour and phase of the project. Other services we provide are for risk management. We will provide auditing, assessments, and analysis reports with recommendations.
-</p>
+<style>
+    .pad {
+        padding: 100px;
+    }
 
-<div id="content">
-    <aside id="">
-        <img src="../images/Iowa-DOT.jpg" alt="Iowa DOT Icon" style="width:300px; height:auto;" />/>
-        <p>Iowa Department of Transportation Vendor File</p>
+    @@media only screen and (max-width: 992px){
+        .center{    
+            float: none !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
 
-        <img src="../images/Iowa-SOS.png" alt="Iowa SOS Icon" style="width:300px; height:auto;" />
-        <p>Iowa Secretary of State Business Entity Summary</p>
+    }
 
-        <img src="../images/Iowa-TSB.png" alt="Iowa Icon" style="width:300px; height:auto;" />
-        <p>Iowa Targeted Small Business Registry</p>
-    </aside>
-    <article id="">
-        <h1>Request services/people</h1>
-        <div id="colleft">
-            <form id="contactform" action="#" method="post">
-                <fieldset>
+    @@media only screen and (max-width: 420px){
+        .text-left.pad {
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
 
-                    <!--<p><label for="firstname">First Name:</label><input type="text" name="firstname" placeholder="First Name"/></p>-->
-                    <p><label for="name">First and Last Name:</label></br><input type="text" name="names" placeholder="First and Last Name" /></p>
-                    <p><label for="name">Civil or Government Entity:</label></br><input type="text" name="names" placeholder="Civil or Government Entity" /></p>
-                    <p><label for="name">Business Address:</label></br><input type="text" name="names" placeholder="Business Address" /></p>
+    }
 
-                    <p><label for="email">Email Address:</label><input type="email" name="email" placeholder="Your Email Address" /></p>
-                    <p><label for="phone">Phone Number:</label><input type="text" name="phone" placeholder="(555) 555-5555" /></p>
-                    <p>
-                        <label for="total people">Total number of people</label>
-                        <input type="number" min="1" max="30" />
+</style>
 
-                    </p>
+<div id="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="text-left pad">
+                At Flaggers National your work zone safety is our business. We specialize in providing efficient and effective solutions to your roadway projects.<br /><br />
 
-                    <p>
-                        <input type="date" name="date" min="1" />
-                    </p>
+                We provide accurate and professional traffic control consultation and planning services for bridge and heavy highway maintenance,
+                new construction, railroad crossings, survey crews, utility operations, concrete and paving projects, clearing / grubbing, excavation, and more. <br /><br />
 
-                    <!--<p>
-                        <label for="preffered contact">Preferred Contact:</label>
-                        <select name="Preferred Contact">
-                            <option value="please select">Please Select</option>
-                            <option value="Phone">Phone</option>
-                            <option value="Email">Email</option>
-                        </select>
-                    </p>-->
-                    <p><label for="message">Message: </label> <textarea name="message" placeholder="Enter Your Message"></textarea></p>
-                    <p><button>Send</button></p>
-                </fieldset>
-            </form>
+                ​		We mobilize, manage, and monitor traffic control projects. We deliver and set up all traffic control devices and break them down thereafter. We develop traffic control plans, interact with local county engineers, and prepare traffic control diaries.
+                We monitor the efficiency of the traffic control throughout each hour and phase of the project. Other services we provide are for risk management. We will provide auditing, assessments, and analysis reports with recommendations.
+            </p>
         </div>
-    </article>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <a href="https://iowadot.gov/contracts/vendor.txt">
+                <img src="../images/Iowa-DOT.jpg" alt="Iowa DOT Icon" style="width:210px; height:211px;" /></a>
+                <p>Iowa Department of Transportation Vendor File</p><br />
+            
+            <a href="https://sos.iowa.gov/search/business/summary.aspx?q=JV_KT60UTcuhiA0A8E3YM7s2baQj0RvkDOyZbvkI6HO8_nXvZhLaAGTM-dG4gObWX3lfZlQxfQx7uQAIGXSDBTyVc8-_Y_YbWqJsb7hRkgqIloWRlriJvc059DrjQho-pfBwecmA9uWWg9_5w8bSuWCR5bc0Yg95E-qTr7HS-r01mQuTZ2T4E0vbUITrTNyBEOtgIlLLiCFuCBhr423zlL7AbgGwJSN34R-lh4rQ2K_30UdlJ2HNoRDPZ45O-OmsnIRYSPOMbIwgbDpvYE7BYqfNAd6b-wQStl7Htv5kxuzItIgaYJ67kCYNMMD2zRwGq3xib-EOPg3n2UGHhBKC1zq5Q4B3UNoC7_LIkmnfbbdjUhwGntOR2XcIy1cCYB37pVLDjRr-hteVbfhz_bamQ_sjDbP_VfRCBdeaKQWYtFw1">
+                <img src="../images/Iowa-SOS.png" alt="Iowa SOS Icon" style="width:210px; height:211px;" /></a>
+                <p>Iowa Secretary of State Business Entity Summary</p><br />
+
+            <a href="https://iowaeda.microsoftcrmportals.com/view-business-detail/?id=ddf1f56f-09d6-e811-8144-1458d04d2538&tsb-type=Woman%3B%20Minority">
+                <img src="../images/Iowa-TSB.png" alt="Iowa Icon" style="width:210px; height:211px;" /></a>
+                <p>Iowa Targeted Small Business Registry</p>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+            <div class="row">
+                <h1 class="pull-left center">Request services/people</h1>
+            </div>
+                
+            <div class="row">
+                <form id="contactform" class="pull-left text-left center" action="#" method="post">
+                    <fieldset>
+                        <p>
+                            <label for="name">First and Last Name:</label><br />
+                            <input type="text" name="names" placeholder="First and Last Name" style="width:250px;"/>
+                        </p>
+                        <p>
+                            <label for="name">Civil or Government Entity:</label><br />
+                            <input type="text" name="names" placeholder="Civil or Government Entity" style="width:250px;"/>
+                        </p>
+                        <p>
+                            <label for="name">Business Address:</label><br />
+                            <input type="text" name="names" placeholder="Business Address" style="width:250px;"/>
+                        </p>
+
+                        <p>
+                            <label for="email">Email Address:</label><br />
+                            <input type="email" name="email" placeholder="Your Email Address" style="width:250px;"/>
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number:</label><br />
+                            <input type="text" name="phone" placeholder="(555) 555-5555" style="width:250px;"/>
+                        </p>
+                        <p>
+                            <label for="total people">Total number of people</label><br />
+                            <input type="number" min="1" max="30" style="width:250px;" />
+                        </p>
+
+                        <p>
+                            <label for="start date needed">Start Date Needed</label><br />
+                            <input type="date" name="date" min="@thisYear-@thisMonth-@thisDay" style="width:250px;" />
+                        </p>
+
+                        <p>
+                            <label for="message">Additional Information/Positions Needed </label> <br />
+                            <textarea name="message" placeholder="Enter Your Message" style="width:250px;"></textarea>
+                        </p>
+
+                        <p>
+                            <label for="name">Attach a Contract</label><br />
+                            <input type="text" name="names" placeholder="Choose a file" style="width:250px;"/>
+                        </p>
+                        <p><button style="width:250px;">Submit</button></p>
+                        <p><button style="width:250px;">Submit and Create Account</button></p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
