@@ -1,0 +1,71 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+#colOne {
+    width: 200px;
+    background-color: #FFF;
+    float: left;
+}
+
+#colTwo {
+    width: 680px;
+    background-color: #FFF;
+    float: right;
+}
+#colleft{
+    float:right;
+}
+
+.navbar navbar-inverse{
+    width: 100%;
+    padding-left: 0px;
+}
+.navbar {
+    width: 100%;
+    padding-left: 0px;
+}
+
+.pad {
+    padding: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        float:none;
+        text-align:center;
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .center {
+        float: none !important;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .text-left.pad {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

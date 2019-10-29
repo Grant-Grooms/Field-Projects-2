@@ -13,33 +13,6 @@
     string thisDay = Convert.ToString(today);
 }
 
-<style>
-    .pad {
-        padding: 100px;
-    }
-
-    @@media only screen and (max-width: 992px){
-        .center{    
-            float: none !important;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-    }
-
-    @@media only screen and (max-width: 420px){
-        .text-left.pad {
-            text-align: center;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-    }
-
-</style>
-
 <div id="container">
     <div class="row">
         <div class="col-md-12">
@@ -49,7 +22,7 @@
                 We provide accurate and professional traffic control consultation and planning services for bridge and heavy highway maintenance,
                 new construction, railroad crossings, survey crews, utility operations, concrete and paving projects, clearing / grubbing, excavation, and more. <br /><br />
 
-                ​		We mobilize, manage, and monitor traffic control projects. We deliver and set up all traffic control devices and break them down thereafter. We develop traffic control plans, interact with local county engineers, and prepare traffic control diaries.
+                We mobilize, manage, and monitor traffic control projects. We deliver and set up all traffic control devices and break them down thereafter. We develop traffic control plans, interact with local county engineers, and prepare traffic control diaries.
                 We monitor the efficiency of the traffic control throughout each hour and phase of the project. Other services we provide are for risk management. We will provide auditing, assessments, and analysis reports with recommendations.
             </p>
         </div>
@@ -116,7 +89,7 @@
 
                         <p>
                             <label for="name">Attach a Contract</label><br />
-                            <input type="text" name="names" placeholder="Choose a file" style="width:250px;"/>
+                            <input class="center" type="file" id="file" name="file" multiple style="width:250px;">
                         </p>
                         <p><button style="width:250px;">Submit</button></p>
                         <p><button style="width:250px;">Submit and Create Account</button></p>
