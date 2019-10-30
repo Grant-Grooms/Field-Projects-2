@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Flaggers National Traffic Control Systems</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+  
+    <link href="~/Content/Home-Styles.css" rel="stylesheet" />
+
+    <style>
+        @@media only screen and (min-width: 1024px) {
+            .navigate{
+                padding-left: 300px;
+            }
+        }
+
+        @@media only screen and (max-width: 1024px) {
+            .navbar {
+                float:none;
+                text-align:center;
+                padding-left: 0px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="header">
+        <article style="float:left;text-align:end;width:54%;">
+            <img src="~/images/Flaggers Logo (1).png" />
+        </article>
+        
+        <aside style="padding-right:220px;width:46%;">
+                @Html.Partial("_LoginPartial")
+        </aside>
+    </div>
+    <hr size="50" width="70%" align="center" color="black" style="height:2px; clear:both;" />
+    <div class="navbar navbar-inverse navigate" style="background-color:white; clear:both; border:none;"; >
+        <div class="container">
+            <div class="navbar-header" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             
+            </div>
+            <div class="navbar-collapse collapse" style="text-align:center; border:none;">
+                <ul class="nav navbar-nav" >
+                    <li>@Html.ActionLink("Home", "index", "Home" )</li>
+                    <li>@Html.ActionLink("Community", "Community", "Home")</li>
+                    <li>@Html.ActionLink("Contractors", "Contractors", "Home")</li>
+                    <li>@Html.ActionLink("CurrentEmployee", "CurrentEmployee", "Home")</li>
+                    <li>@Html.ActionLink("ProspectiveEmployee", "ProspectiveEmployee", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+       
+        <footer style="clear:both;">
+            <p>&copy; Copyright @DateTime.Now.Year - Flaggers National Traffic Control Systems</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
