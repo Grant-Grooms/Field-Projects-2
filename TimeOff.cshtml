@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "TimeOff";
+}
+
+<h2>Request time off</h2>
+<label>First name</label>
+<input type="text" name="firstName" placeholder="First name" required maxlength="100" />
+<label>Last name</label>
+<input type="text" name="lastName" placeholder="Last name" required maxlength="100" />
+<label>Address</label>
+<input type="text" name="address" placeholder="Address" required maxlength="250" />
+<label>Email</label>
+<input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@("@")[a-z0-9.-]+\.[a-z]{2,}$" maxlength="250" />
+<label>Daytime phone number</label>
+<input type="tel" name="number" placeholder="Daytime phone number" required maxlength="50" />
+<label>Job</label>
+<select>
+    <option default disabled style="display: none">Job</option>
+    <option value="Certified Traffic Control Supervisor">Certified Traffic Control Supervisor</option>
+    <option value="Flagger">Flagger</option>
+    <option value="Office Assistant">Office Assistant</option>
+    <option value="Safety Management Coordinator">Safety Management Coordinator</option>
+</select>
+<label>Attach legal/medical excuse</label>
+<input type="text" name="file" placeholder="File" />
+<label>First date requested</label>
+<input type="date" name="firstDate" placeholder="First date requested" min="" max="" required />
+<label>Last date requested</label>
+<input type="date" name="lastDate" placeholder="Last date requested" min="" required />
+<label>Reason for time off</label>
+<textarea placeholder="Reason for time off" required></textarea>

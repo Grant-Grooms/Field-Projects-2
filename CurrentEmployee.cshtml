@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "CurrentEmployee";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="colOne">
+        <nav>
+            <ul>
+                <li>
+                    <div>
+                        <a href="/Home/MyAccount">My Account</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <iframe src="~/Home/MyAccount"></iframe>
+        </div>
+        <div>
+            <span>Clock in/out (GPS authenticated)</span>
+        </div>
+        <div>
+            <a href="TimeOff">
+                <span>Request time off</span>
+            </a>
+        </div>
+    </div>
+    <div id="colTwo">
+    <h2>
+        <span>Employee announcements</span>
+    </h2>
+    <p>
+        <span>
+            There will be an employee meeting this Saturday at 9:00 a.m.
+        </span>
+    </p>
+    <br />
+    <p>
+        <span>
+            The annual employee picnic will be on Sunday at 1:00 p.m.
+        </span>
+    </p>
+    </div>
+</body>
